@@ -10,11 +10,13 @@
     </div>
     <div class="dark-user-combu">
         <div class="dark">
-            <img src="{{ asset('images/moon.png') }}" class="dark-toggle" data-sun="{{ asset('images/sun.png') }}" data-moon="{{ asset('images/moon.png') }}" />
-          </div>
+            <img src="{{ asset('images/moon.png') }}" class="dark-toggle" data-sun="{{ asset('images/sun.png') }}"
+                data-moon="{{ asset('images/moon.png') }}" />
+        </div>
+
+        <div class="user">
+            <img src="{{ asset('images/customer01.jpg') }}" />
+        </div>
     </div>
-      
-    <div class="user">
-        <img src="{{ asset('images/customer01.jpg') }}" />
-    </div>
+
 </div>

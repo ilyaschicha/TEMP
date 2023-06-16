@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
-    <link rel="shortcut icon" href="{{ asset('images/favicon.svg') }}" type="image/svg+xml">
+    <link rel="shortcut icon" href="{{ asset('images/white.png') }}" type="image/svg+xml">
 
     <title>{{$title ?? 'Default Title'}}</title>
 

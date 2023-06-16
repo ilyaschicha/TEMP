@@ -2,9 +2,16 @@
 
 
     <div class="table-ajouter-title py-2 mt-2"> 
-        <h2>  La liste des patients </h2>
+        <h2 style="display: inline;
+        border-bottom: 7px solid #1B9C85;">  La liste des patients </h2>
+
+        <div>
+            <a class="btn btn-danger btn-lg action-btn" href="{{ route('patients.Ajouter') }}"
+            role="button">Export</a>
             <a class="btn btn-primary btn-lg action-btn" href="{{ route('patients.Ajouter') }}"
             role="button">Ajouter</a>
+        </div>
+            
     </div>
 
     <table class="table table-bordered ">

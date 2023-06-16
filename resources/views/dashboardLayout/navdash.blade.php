@@ -15,9 +15,15 @@
                 <span class="hover-text">SMILE</span>
             </div> --}}
 
-            <div class="effect" width="300"> 
+            {{-- <div class="effect" width="300"> 
                 <p>ORALSPACE</p>
-            </div>
+            </div> --}}
+
+            <li>
+                <div>
+                    <img src="{{ asset('images/white.png') }}" width="75"  height="75">
+                </div>
+            </li>
 
             <li>
                 <a href="{{  route('dashboardpage')  }}">
