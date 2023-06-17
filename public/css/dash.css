@@ -25,11 +25,12 @@ body {
 }
 
 .dark {
-  --blue: #6a7aff;
-  --white: #1e2656;
+
+  --blue: #0EF6CC;
+  --white: #1B2223;
   --gray: #182c25;
   --black1: #6a7aff;
-  --black2: #6a7aff;
+  --black2: #F4FEFD;
   --shadow: rgb(114 126 177);
   --inputbg: #141438;
   --fontcolor: #fff;
@@ -710,7 +711,7 @@ form label {
   position: absolute;
   inset: 0;
   width: 0%;
-  color: linear-gradient( 109.6deg,  rgba(61,131,97,1) 11.2%, rgba(28,103,88,1) 91.1% );; 
+  color: linear-gradient( 109.6deg,  rgba(61,131,97,1) 11.2%, rgba(28,103,88,1) 91.1% );;
   overflow: hidden;
   border-right: 6px solid linear-gradient( 109.6deg,  rgba(61,131,97,1) 11.2%, rgba(28,103,88,1) 91.1% );
   transition: 0.5s ease-in-out;
@@ -729,7 +730,7 @@ form label {
 
 .effect p {
   background: linear-gradient(to right, #fdbb2d, #22c1c3);
-  
+
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -870,7 +871,7 @@ form label {
 
 .links a img {
   width: 25px;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .links .msg-btn{
