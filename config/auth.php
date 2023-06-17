@@ -36,6 +36,18 @@ return [
     */
 
     'guards' => [
+        'dentiste' => [
+            'driver' => 'session',
+            'provider' => 'dentistes',
+        ],
+        'administrator' => [
+            'driver' => 'session',
+            'provider' => 'administrators',
+        ],
+        'assistant' => [
+            'driver' => 'session',
+            'provider' => 'assistants',
+        ],
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
@@ -60,9 +72,17 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        'dentistes' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\Dentiste::class,
+        ],
+        'administrators' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Administrateur::class,
+        ],
+        'assistants' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Assistante::class,
         ],
 
         // 'users' => [
@@ -91,8 +111,26 @@ return [
     */
 
     'passwords' => [
-        'users' => [
-            'provider' => 'users',
+        'admins' => [
+            'provider' => 'admins',
+            'table' => 'password_reset_tokens',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'assistanes' => [
+            'provider' => 'assistanes',
+            'table' => 'password_reset_tokens',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'dentistes' => [
+            'provider' => 'dentistes',
+            'table' => 'password_reset_tokens',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'patients' => [
+            'provider' => 'patients',
             'table' => 'password_reset_tokens',
             'expire' => 60,
             'throttle' => 60,
